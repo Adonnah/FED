@@ -39,11 +39,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <a>https://www.zumiez.com</a>    
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Zumiez homepage  
   <img src="readme-images/schermafbeelding-2024-09-05-om-19.17.42.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Empyre brand page  
    <img src="readme-images/schermafbeelding-2024-09-05-om-19.18.06.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
