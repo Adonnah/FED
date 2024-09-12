@@ -19,10 +19,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Adonnah Caldwell 
 
   #### Je startniveau:
-  Blauw 
+  Rood
 
   #### Je focus:
-  Surface plane 
+  Responsive 
  
 </details>
 
@@ -54,9 +54,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
+voice over test: 
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+Positive points
+- 
+
+Negative points
+- Zitten veel fouten in het HTML
+- Er word geen audio of video gebruikt.
+- Werk niet bij darkmodus.
 
 </details>
 
