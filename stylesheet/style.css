@@ -1,0 +1,286 @@
+header, nav, section, article, footer {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    padding: 15px;
+    z-index: 1000;
+    border-bottom: 1px solid black;
+}
+
+a:visited {
+    color: grey;
+}
+
+header img {
+    float: left;
+    max-height: 40px;   
+}
+
+.girl {
+    width: 22em;
+    margin: 0.50em 0.50em 0.50em 0.50em;
+}
+
+ul {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    list-style: none;
+    /* background: black; */
+    padding: 0.60em;
+    font-size: 1.20em;
+    /* border: 1em; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.connect {
+    background-color: white;
+
+}
+
+.zumielogo {
+    position: sticky;
+    margin-right: auto;
+}
+
+nav {
+    display: flex; 
+    list-style: none;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.block {
+   background-color: #adff2f; 
+}
+
+li  {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    /* margin: 0.5em; */
+    font-size: 1em;
+
+}
+
+input {
+    height: 2em;
+    width: 20em;
+    border: 0.20em solid black;
+}
+
+article {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+article img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+h2 {
+    position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0;
+            transform: translateX(-0);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px 50px;
+            color: white;
+            font-size: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.6);
+ }
+ 
+section#product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+footer {
+    /* background-color: #222; */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    section#categories {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+p, h3, h4, h5 {
+    color: #000;
+}
+
+a {
+    text-decoration: none; 
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    display: block;
+    padding: 10px 20px;
+}
+
+
+nav button {
+    display: none;
+    float: right;
+    font-size: 24px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header img {
+        display: inline-block;
+        float: none;
+    }
+    }
+
+    nav {
+        float: none;
+        text-align: center;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    nav button {
+        display: inline-block;
+    }
+
+    nav[aria-expanded="true"] ul {
+        display: block;
+    }
+
+    .info-sections {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        background-color: #f8f8f8;
+    }
+    
+    .info-sections section {
+        flex: 1;
+        margin-right: 20px;
+    }
+    
+    .info-sections section:last-child {
+        margin-right: 0;
+    }
+    
+    .info-sections h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
+    .info-sections ul {
+        list-style-type: none;
+    }
+    
+    .info-sections ul li {
+        margin-bottom: 10px;
+    }
+    
+    .info-sections ul li a {
+        text-decoration: none;
+        color: #555;
+        font-size: 16px;
+    }
+    
+    .info-sections ul li a:hover {
+        text-decoration: underline;
+        color: #000;
+    }
+    
+    @media (max-width: 768px) {
+        .info-sections {
+            flex-direction: column;
+        }
+    
+        .info-sections section {
+            margin-bottom: 20px;
+        }
+    }
+
+footer section:nth-of-type(1) ul {
+    border-bottom: 1px solid black;
+}
+
+footer section:nth-of-type(2) ul {
+    border-bottom: 1px solid black;
+    display: flex;
+    margin: 1em;
+}
+
+footer section:nth-of-type(3) ul {
+    border-bottom: 1px solid black;
+}
+
+.plus a {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.plus img {
+    justify-content: flex-end;
+    width: 2em;
+    height: 1.5em;
+}
+
+footer h3 {
+    display: flex;
+    justify-content: start;
+    margin: 0;
+}
+
+header a {
+    display: flex;
+}
