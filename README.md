@@ -112,10 +112,10 @@ Negative points
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - loop een klein beetje achter dus grotere stappen zetten.
+  - Met de groep bespreken waar iedereens probleem ligt en zien of je elkaar kan helpen.
+  - Begint op de website te lijken 
+  - 
 
 </details>
 
@@ -137,8 +137,8 @@ Negative points
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Emma loopt vast bij de logo, om de formaat goed te krijgen.| en dit             | en ik dit    | en dan ik dat    |
+  |We hebben er samen naar gekeken maar we kwamen er niet dat het beter is om het te vragen tijdensde meeting.| dit als er tijd is | nog een punt | dit wil ik zeker| dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
