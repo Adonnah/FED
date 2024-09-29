@@ -147,10 +147,7 @@ Negative points
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Mijn vragen beantwoord en verder geen tips of dat ik achterliep. 
 
 </details>
 
@@ -222,7 +219,7 @@ Negative points
   ### Dit was lastig/Is niet gelukt:
   De opmaak van het hamburger menu was best ingewikkeld, ik kreeg dit niet zoals ik had gehoopd. Ook was het een challenge om svg icontjes/afbeeldingen te vinden/maken, maar uiteindelijk is het gelukt om svg's te maken/vinden. Ook vond ik het moeilijk om animaties erop te krijgen, want heel veel elementen werkte gewoon niet met wat ik wilde doen (sort zachte confetti button en sparkles op de muis als je hem beweegt.  
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/Schermafbeelding 2024-09-29 om 08.51.05.png" width="375px" alt="bummer">
 </details>
 
 
