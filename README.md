@@ -76,7 +76,7 @@ Negative points
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/untitled-1-fed" width="375px" alt="omschrijving van de pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
@@ -237,8 +237,9 @@ Negative points
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. bron 1 chat gpt: 
+  2. bron 2: zumiez: 
+  3. bron 3: w3schools: https://www.w3schools.com/default.asp
+  4. bron 4: free convert SVG: https://www.freeconvert.com/nl/jpg-to-svg/download
 
 </details>
