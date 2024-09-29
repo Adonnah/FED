@@ -49,6 +49,7 @@ sortIconButton.addEventListener('click', function() {
     }
 });
 
+// bron: chat gpt: https://chatgpt.com/c/2feceae3-6dd6-4cf3-8ba3-0d833a3b333d
 document.addEventListener('mousemove', function(e) {
     console.log("Mouse moved: ", e.pageX, e.pageY); 
     // Create a new particle element
@@ -67,4 +68,21 @@ document.addEventListener('mousemove', function(e) {
         particle.remove();
     }, 800); // Matches the duration of the fadeOut animation (0.8s)
 });
-  
+
+
+
+var animateButton = function(e) {
+    e.preventDefault;
+    //reset animation
+    e.target.classList.remove('animate');
+    
+    e.target.classList.add('animate');
+    setTimeout(function(){
+      e.target.classList.remove('animate');
+    },700);
+  };
+  var classname = document.getElementsByClassName("bubbly-button");
+  for (var i = 0; i < classname.length; i++) {
+    classname[i].addEventListener('click', animateButton, false);
+    
+  }

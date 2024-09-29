@@ -1,5 +1,4 @@
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -7,10 +6,9 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    /* height: 100vh;
-    background-color: #f0f0f0; */
 }
 
+/* bron: chat gpt : https://chatgpt.com/c/2feceae3-6dd6-4cf3-8ba3-0d833a3b333d */
 /* Styling for each particle */
 .particle {
     position: absolute;
@@ -79,13 +77,9 @@ aside a:nth-of-type(1) {
 }
 
 ul {
-    /* display: flex; */
-    /* justify-content: space-between; */
     list-style: none;
-    /* background: black; */
     padding: 0.60em;
-    font-size: 1.20em;
-    /* border: 1em; */
+    font-size: 1.20em;  
 }
 
 .connect {
@@ -119,7 +113,6 @@ li {
     list-style: none;
     padding: 0.5em;
     border-radius: 0.2em;
-    /* margin: 0.5em; */
     font-size: 1em;
 
 }
@@ -164,14 +157,12 @@ h2 {
 
 section#product-grid {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
     grid-template: repeat(5, auto) / 50% 50%;
     gap: 20px;
     padding: 40px;
 }
 
 footer {
-    /* background-color: #222; */
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -374,6 +365,7 @@ label {
     margin-bottom: 5px;
 }
 
+/* bron: chat gpt : https://chatgpt.com/c/2feceae3-6dd6-4cf3-8ba3-0d833a3b333d */
 /* Style the select dropdowns */
 select {
     width: 100%;
@@ -395,31 +387,13 @@ button[aria-label="Toggle Sort Direction"] {
     transition: transform 0.3s ease;
 }
 
-/* Style the SVG inside the button */
-/* button[aria-label="Toggle Sort Direction"] svg {
-    stroke: #888;
-    transition: stroke 0.3s ease, transform 0.3s ease;
-} */
 
-/* Rotating arrow to indicate descending sort */
 button[aria-pressed="true"] svg {
     transform: rotate(180deg);
     stroke: #f5a623;
 }
 
-/* Style the submit button */
-/* button[type="submit"] {
-    padding: 10px 15px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-} */
 
-/* button[type="submit"]:hover {
-    background-color: #555;
-} */
 
 .favorite-star svg {
     fill: none;
@@ -435,7 +409,7 @@ button[aria-pressed="true"] svg {
 }
 /* Deze stuk koden heb ik van de website w3schools.com : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_signup_form */
 .su {
-    background-color: #2A2A2A;
+    background-color: #2A2A2A; /*bron zumiez website*/
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -447,6 +421,44 @@ button[aria-pressed="true"] svg {
 .su:hover {
     opacity: 1;
 }
+
+.su .animate:before {
+    display: block;
+    animation: topBubbles ease-in-out 0.75s forwards;
+}
+
+.su .animate::after {
+    display: block;
+    animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+
+/* bron: chat gpt : https://chatgpt.com/c/2feceae3-6dd6-4cf3-8ba3-0d833a3b333d */
+@keyframes 
+topBubbles {  0% {
+ background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+}
+50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+   }
+    100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+   }
+   }
+
+   @keyframes 
+bottomBubbles {  0% {
+ background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+}
+ 50% {
+ background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+}
+ 100% {
+ background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+ background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+}
+}
+
 
 .shop {
     background-color: #04AA6D;
@@ -463,38 +475,6 @@ button[aria-pressed="true"] svg {
     opacity: 1;
 }
 
-
-/* @media (max-width: 768px) {
-    header img {
-        display: inline-block;
-        float: none;
-    }
-
-    section#categories {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .info-sections {
-        flex-direction: column;
-    }
-
-    .info-sections section {
-        margin-bottom: 20px;
-    }
-} */
-
-/* Met behulp van chat GPT code gekregen */
-/* button svg {
-    stroke: #888;
-    fill: none; /* Empty star by default */
-    /* transition: fill 0.3s, stroke 0.3s;
-} */
-
-/* button[aria-pressed="true"] svg {
-    stroke: #f5a623;
-    fill: #f5a623; 
-} */
 .grid-try img {
     width: 100%;
     height: auto;

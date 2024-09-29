@@ -13,7 +13,7 @@ discort icon https://images.app.goo.gl/mwQ2AVi7Ci76jmkN6
 
 Bron: Chat GPT
 Bron: Zumiez website
-Bron: 3world 
+Bron: 3world https://www.w3schools.com/default.asp
 Bron: stackoverflow.com 
 
 free convert SVG: https://www.freeconvert.com/nl/jpg-to-svg/download
