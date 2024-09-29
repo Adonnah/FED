@@ -184,20 +184,19 @@ Negative points
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Emma 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | We hebben meer gekeken wat we moeilijk vonden en elkaar proberen te helpen waar nodig.  | en dit             | en ik dit    | en dan ik dat    |
+  | Dit is uiteindelijk gelukt. | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
+  - Zag er goed uit er moeten alleen nog wat animatie erbij.
+  - Somigge elementen van CSS kunnen eruit (die elementen eruit halen)
   - nog een punt
-  - ...
 
 </details>
 
@@ -239,9 +238,10 @@ Negative points
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1 chat gpt: 
-  2. bron 2: zumiez: 
+  1. bron 1 chat gpt: https://openai.com/chatgpt/
+  2. bron 2: zumiez: https://www.zumiez.com/
   3. bron 3: w3schools: https://www.w3schools.com/default.asp
   4. bron 4: free convert SVG: https://www.freeconvert.com/nl/jpg-to-svg/download
+  5. bron 5: Mijn oude projecten in jaar 1
 
 </details>
