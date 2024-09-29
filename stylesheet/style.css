@@ -1,15 +1,58 @@
-header, nav, section, article, footer {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    /* height: 100vh;
+    background-color: #f0f0f0; */
+}
+
+/* Styling for each particle */
+.particle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 1); /* Light gray particle */
+    border-radius: 50%; /* Make the particle a circle */
+    pointer-events: none; /* Prevent particles from being interactive */
+    animation: fadeOut 1.2s forwards; /* Fade out animation */
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+header,
+nav,
+section,
+article,
+footer {
     padding: 20px;
     margin: 0 auto;
 }
 
 header {
-    position: sticky;
     top: 0;
     background-color: #fff;
     padding: 15px;
     z-index: 1000;
     border-bottom: 1px solid black;
+}
+
+.hi {
+    position: sticky;
+    width: 100%;
 }
 
 a:visited {
@@ -18,12 +61,21 @@ a:visited {
 
 header img {
     float: left;
-    max-height: 40px;   
+    max-height: 40px;
+}
+
+aside a:nth-of-type(1) img {
+    width: 100px;
+    height: 22px;
+}
+
+aside a:nth-of-type(1) {
+    margin: 0 auto;
 }
 
 .girl {
-    width: 22em;
-    margin: 0.50em 0.50em 0.50em 0.50em;
+    width: 100%;
+    margin: 0;
 }
 
 ul {
@@ -34,7 +86,6 @@ ul {
     padding: 0.60em;
     font-size: 1.20em;
     /* border: 1em; */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .connect {
@@ -48,7 +99,7 @@ ul {
 }
 
 nav {
-    display: flex; 
+    display: flex;
     list-style: none;
     justify-content: space-between;
     text-decoration: none;
@@ -59,10 +110,10 @@ nav {
 }
 
 .block {
-   background-color: #adff2f; 
+    background-color: #adff2f;
 }
 
-li  {
+li {
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -74,9 +125,13 @@ li  {
 }
 
 input {
-    height: 2em;
-    width: 20em;
+    height: 2.5em;
+    width: 100%;
     border: 0.20em solid black;
+    margin: 1em auto;
+    /* display inline-block heb ik van: stackoverflow.com */
+    display: inline-block;
+
 }
 
 article {
@@ -87,26 +142,30 @@ article {
 
 article img {
     max-width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+
 }
 
 h2 {
     position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: 0;
-            transform: translateX(-0);
-            background-color: rgba(0, 0, 0, 0.5);
-            padding: 20px 50px;
-            color: white;
-            font-size: 20px;
-            border: 2px solid rgba(255, 255, 255, 0.6);
- }
- 
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    transform: translateX(-0);
+    background-color: rgba(42, 42, 42, 0.65);
+    padding: 20px 50px;
+    color: white;
+    font-size: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+
 section#product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+    grid-template: repeat(5, auto) / 50% 50%;
     gap: 20px;
     padding: 40px;
 }
@@ -116,25 +175,22 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px 0;
-}
-
-@media (max-width: 768px) {
-    section#categories {
-        flex-direction: column;
-        align-items: center;
-    }
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .hidden {
     display: none;
 }
 
-p, h3, h4, h5 {
+p,
+h3,
+h4,
+h5 {
     color: #000;
 }
 
 a {
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 a:hover {
@@ -169,87 +225,73 @@ nav button {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-    header img {
-        display: inline-block;
-        float: none;
-    }
-    }
 
-    nav {
-        float: none;
-        text-align: center;
-    }
+nav {
+    float: none;
+    text-align: center;
+}
 
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
+nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+}
 
-    nav ul li {
-        text-align: center;
-    }
+nav ul li {
+    text-align: center;
+}
 
-    nav button {
-        display: inline-block;
-    }
+nav button {
+    display: inline-block;
+}
 
-    nav[aria-expanded="true"] ul {
-        display: block;
-    }
+nav[aria-expanded="true"] ul {
+    display: block;
+}
 
-    .info-sections {
-        display: flex;
-        justify-content: space-between;
-        padding: 40px;
-        background-color: #f8f8f8;
-    }
-    
-    .info-sections section {
-        flex: 1;
-        margin-right: 20px;
-    }
-    
-    .info-sections section:last-child {
-        margin-right: 0;
-    }
-    
-    .info-sections h2 {
-        font-size: 24px;
-        margin-bottom: 20px;
-        color: #333;
-    }
-    
-    .info-sections ul {
-        list-style-type: none;
-    }
-    
-    .info-sections ul li {
-        margin-bottom: 10px;
-    }
-    
-    .info-sections ul li a {
-        text-decoration: none;
-        color: #555;
-        font-size: 16px;
-    }
-    
-    .info-sections ul li a:hover {
-        text-decoration: underline;
-        color: #000;
-    }
-    
-    @media (max-width: 768px) {
-        .info-sections {
-            flex-direction: column;
-        }
-    
-        .info-sections section {
-            margin-bottom: 20px;
-        }
-    }
+.info-sections {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f8f8f8;
+}
 
+.info-sections section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.info-sections section:last-child {
+    margin-right: 0;
+}
+
+.info-sections h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.info-sections ul {
+    list-style-type: none;
+}
+
+.info-sections ul li {
+    margin-bottom: 10px;
+}
+
+.info-sections ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 16px;
+}
+
+.info-sections ul li a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+
+/* footer section heb heeft Danny mij uitgelegt en laten zien hoe ik dit zou kunnen anpakken en toe kan passen aan mijn website     */
 footer section:nth-of-type(1) ul {
     border-bottom: 1px solid black;
 }
@@ -261,6 +303,10 @@ footer section:nth-of-type(2) ul {
 }
 
 footer section:nth-of-type(3) ul {
+    border-bottom: 1px solid black;
+}
+
+footer section:nth-of-type(4) ul {
     border-bottom: 1px solid black;
 }
 
@@ -283,4 +329,190 @@ footer h3 {
 
 header a {
     display: flex;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+}
+
+
+#product-grid {
+    display: grid;
+}
+
+aside {
+    display: flex;
+    align-items: center;
+}
+
+form {
+    border: 1px solid #ddd;
+    padding: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+Style the labels
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style the select dropdowns */
+select {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+/* Style the sort icon button */
+button[aria-label="Toggle Sort Direction"] {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 5px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+/* Style the SVG inside the button */
+/* button[aria-label="Toggle Sort Direction"] svg {
+    stroke: #888;
+    transition: stroke 0.3s ease, transform 0.3s ease;
+} */
+
+/* Rotating arrow to indicate descending sort */
+button[aria-pressed="true"] svg {
+    transform: rotate(180deg);
+    stroke: #f5a623;
+}
+
+/* Style the submit button */
+/* button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+} */
+
+/* button[type="submit"]:hover {
+    background-color: #555;
+} */
+
+.favorite-star svg {
+    fill: none;
+    stroke: black;
+    stroke-width: 10px;
+    transition: all 250ms ease;
+}
+
+.grid-try {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+
+}
+/* Deze stuk koden heb ik van de website w3schools.com : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_signup_form */
+.su {
+    background-color: #2A2A2A;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.su:hover {
+    opacity: 1;
+}
+
+.shop {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.shop:hover {
+    opacity: 1;
+}
+
+
+/* @media (max-width: 768px) {
+    header img {
+        display: inline-block;
+        float: none;
+    }
+
+    section#categories {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-sections {
+        flex-direction: column;
+    }
+
+    .info-sections section {
+        margin-bottom: 20px;
+    }
+} */
+
+/* Met behulp van chat GPT code gekregen */
+/* button svg {
+    stroke: #888;
+    fill: none; /* Empty star by default */
+    /* transition: fill 0.3s, stroke 0.3s;
+} */
+
+/* button[aria-pressed="true"] svg {
+    stroke: #f5a623;
+    fill: #f5a623; 
+} */
+.grid-try img {
+    width: 100%;
+    height: auto;
+}
+.grid-try button {
+    position: absolute;
+    top: 0%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+} 
+
+h1 {
+  margin: 20px;  
 }
