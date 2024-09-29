@@ -54,12 +54,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 <details>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
-voice over test: 
+voice over test:  
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
 Positive points
-- 
+- De website is straight to the point op visueel gebied.
+- De website is ook niet ingewikkeld voor gebruik, maar wel voor mensen met een beperking.
+- Hamburger menu is visueel goed maar ook voor gebruik. 
 
 Negative points
 - Zitten veel fouten in het HTML
@@ -76,7 +78,7 @@ Negative points
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/untitled-1-fed" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/untitled-1-fed" alt="omschrijving van de pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
