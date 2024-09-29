@@ -214,13 +214,13 @@ Negative points
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb zeker veel dingen geleerd, in jaar 1 had ik helemaal niet met articles en sections gewerkt en nu moesten we hier zo veel mogelijk mee aan de slag. Ook heb ik een leuke animatie van een ster (favorite) gemaakt an de hand van javascript wat erg leuk was om te doen. ik heb ook sommige oude elementen die ik in jaar 1 heb gebruikt, opnieuw gebruikt (audio,  enz.). 
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  De opmaak van het hamburger menu was best ingewikkeld, ik kreeg dit niet zoals ik had gehoopd. Ook was het een challenge om svg icontjes/afbeeldingen te vinden/maken, maar uiteindelijk is het gelukt om svg's te maken/vinden. Ook vond ik het moeilijk om animaties erop te krijgen, want heel veel elementen werkte gewoon niet met wat ik wilde doen (sort zachte confetti button en sparkles op de muis als je hem beweegt.  
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
