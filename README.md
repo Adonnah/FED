@@ -239,6 +239,7 @@ Negative points
   2. bron 2: zumiez: https://www.zumiez.com/
   3. bron 3: w3schools: https://www.w3schools.com/default.asp
   4. bron 4: free convert SVG: https://www.freeconvert.com/nl/jpg-to-svg/download
-  5. bron 5: Mijn oude projecten in jaar 1
+  5. bron 5: https://confetti.js.org/more.html
+  6. bron 6: Mijn oude projecten in jaar 1
 
 </details>
