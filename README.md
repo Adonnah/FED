@@ -159,10 +159,24 @@ Negative points
 
 <details>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
-
+  <img src="readme-images/wcag-checklist-1.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/wcag-checklist-2.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/wcag-checklist-3.jpg" width="375px" alt="omschrijving van de pagina"> 
+  <img src="readme-images/wcag-checklist-4.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/wcag-checklist-5.jpg" width="375px" alt="omschrijving van de pagina">
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
+  Positieve bevindingen
+  1.
+
+  Negatieve bevindingen
+  1. Het heeft geen darkmoduse
+  2. Zumiez gebruikt niks wat met video of audio te maken heeft.
+  3. Links staan niet duidelijk aangegeven
+  4. Ze hebben alleen het eerste gedeelte van animatie <strong>'ensure animations are subtle and do not flash too much'</strong>
+  5. 
+  
 </details>
 
 
