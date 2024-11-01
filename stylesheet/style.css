@@ -36,14 +36,14 @@ nav,
 section,
 article,
 footer {
-    padding: 20px;
+    padding: 1.25em;
     margin: 0 auto;
 }
 
 header {
     top: 0;
     background-color: #fff;
-    padding: 15px;
+    padding: 0.9375em;
     z-index: 1000;
     border-bottom: 1px solid black;
 }
@@ -59,12 +59,12 @@ a:visited {
 
 header img {
     float: left;
-    max-height: 40px;
+    max-height: 2.5em;
 }
 
 aside a:nth-of-type(1) img {
-    width: 100px;
-    height: 22px;
+    width: 6.25em;
+    height: 1.375em;
 }
 
 aside a:nth-of-type(1) {
@@ -114,6 +114,7 @@ li {
     padding: 0.5em;
     border-radius: 0.2em;
     font-size: 1em;
+    color: #000;
 
 }
 
@@ -129,28 +130,28 @@ input {
 
 article {
     text-align: center;
-    padding: 20px;
+    padding: 1.25em;
     position: relative;
 }
 
 article img {
     max-width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125em;
 
 }
 
 h2 {
     position: absolute;
     font-family: Arial, Helvetica, sans-serif;
-    bottom: 0;
+    bottom: 0.4em;
     left: 0;
     right: 0;
-    margin: 0;
+    margin: 1em;
     transform: translateX(-0);
     background-color: rgba(42, 42, 42, 0.65);
-    padding: 20px 50px;
+    padding: 1.25em ;
     color: white;
-    font-size: 20px;
+    font-size: 1.25em;
     border: 2px solid rgba(255, 255, 255, 0.6);
 }
 
@@ -158,14 +159,14 @@ h2 {
 section#product-grid {
     display: grid;
     grid-template: repeat(5, auto) / 50% 50%;
-    gap: 20px;
+    gap: 1.25em;
     padding: 40px;
 }
 
 footer {
     color: #fff;
     text-align: center;
-    padding: 20px 0;
+    padding: 1.25em 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -182,6 +183,7 @@ h5 {
 
 a {
     text-decoration: none;
+
 }
 
 a:hover {
@@ -194,8 +196,8 @@ nav ul li ul {
     top: 100%;
     left: 0;
     background-color: white;
-    padding: 10px 0;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.625em 0;
+    box-shadow: 0 0.3125em 0.625em rgba(0, 0, 0, 0.1);
 }
 
 nav ul li:hover ul {
@@ -204,15 +206,15 @@ nav ul li:hover ul {
 
 nav ul li ul li {
     display: block;
-    padding: 10px 20px;
+    padding: 0.625em 1.25em;
 }
 
 
 nav button {
     display: none;
     float: right;
-    font-size: 24px;
-    padding: 5px;
+    font-size: 1.5em;
+    padding: 0.3125em;
     cursor: pointer;
 }
 
@@ -243,13 +245,13 @@ nav[aria-expanded="true"] ul {
 .info-sections {
     display: flex;
     justify-content: space-between;
-    padding: 40px;
+    padding: 2.5em;
     background-color: #f8f8f8;
 }
 
 .info-sections section {
     flex: 1;
-    margin-right: 20px;
+    margin-right: 1.25em;
 }
 
 .info-sections section:last-child {
@@ -257,8 +259,8 @@ nav[aria-expanded="true"] ul {
 }
 
 .info-sections h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 1.5em;
+    margin-bottom: 1.25em;
     color: #333;
 }
 
@@ -267,13 +269,13 @@ nav[aria-expanded="true"] ul {
 }
 
 .info-sections ul li {
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
 }
 
 .info-sections ul li a {
     text-decoration: none;
     color: #555;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .info-sections ul li a:hover {
@@ -284,21 +286,23 @@ nav[aria-expanded="true"] ul {
 
 /* footer section heb heeft Danny mij uitgelegt en laten zien hoe ik dit zou kunnen anpakken en toe kan passen aan mijn website     */
 footer section:nth-of-type(1) ul {
-    border-bottom: 1px solid black;
+    border-bottom: 0.0625em solid black;
+    
 }
 
 footer section:nth-of-type(2) ul {
-    border-bottom: 1px solid black;
+    border-bottom: 0.0625em solid black;
     display: flex;
     margin: 1em;
 }
 
 footer section:nth-of-type(3) ul {
-    border-bottom: 1px solid black;
+    border-bottom: 0.0625em solid black;
+    
 }
 
 footer section:nth-of-type(4) ul {
-    border-bottom: 1px solid black;
+    border-bottom: 0.0625em solid black;
 }
 
 .plus a {
@@ -327,7 +331,7 @@ button {
     border: none;
     cursor: pointer;
     outline: none;
-    padding: 10px;
+    padding: 0.625em;
 }
 
 
@@ -341,38 +345,38 @@ aside {
 }
 
 form {
-    border: 1px solid #ddd;
-    padding: 10px;
-    max-width: 400px;
-    margin: 20px auto;
+    border: 0.0625em solid #ddd;
+    padding: 0.625em;
+    max-width: 25em;
+    margin: 1.25em auto;
     background-color: #f9f9f9;
 }
 
 fieldset {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
+    border: 0.0625em solid #ccc;
+    padding: 0.625em;
+    margin-bottom: 0.625em;
 }
 
 legend {
     font-weight: bold;
-    padding: 0 5px;
+    padding: 0 0.3125em;
 }
 
 Style the labels
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125em;
 }
 
 /* bron: chat gpt : https://chatgpt.com/c/2feceae3-6dd6-4cf3-8ba3-0d833a3b333d */
 /* Style the select dropdowns */
 select {
     width: 100%;
-    padding: 5px;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-    border-radius: 4px;
+    padding: 0.3125em;
+    border: 0.0625em solid #ccc;
+    margin-bottom: 0.625em;
+    border-radius: 0.25em;
     background-color: #fff;
 }
 
@@ -382,7 +386,7 @@ button[aria-label="Toggle Sort Direction"] {
     border: none;
     cursor: pointer;
     outline: none;
-    padding: 5px;
+    padding: 0.3125em;
     vertical-align: middle;
     transition: transform 0.3s ease;
 }
@@ -398,7 +402,7 @@ button[aria-pressed="true"] svg {
 .favorite-star svg {
     fill: none;
     stroke: black;
-    stroke-width: 10px;
+    stroke-width: 0.625em;
     transition: all 250ms ease;
 }
 
@@ -408,26 +412,26 @@ button[aria-pressed="true"] svg {
 
 }
 /* Deze stuk koden heb ik van de website w3schools.com : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_signup_form */
-.su {
+.confetti-button {
     background-color: #2A2A2A; /*bron zumiez website*/
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 0.875em 1.25em;
+    margin: 0.5em 0;
     border: none;
     width: 100%;
     opacity: 0.9;
 }
 
-.su:hover {
+.confetti-button:hover {
     opacity: 1;
 }
 
-.su .animate:before {
+.confetti-button .animate:before {
     display: block;
     animation: topBubbles ease-in-out 0.75s forwards;
 }
 
-.su .animate::after {
+.confetti-button .animate::after {
     display: block;
     animation: bottomBubbles ease-in-out 0.75s forwards;
 }
@@ -463,8 +467,8 @@ bottomBubbles {  0% {
 .shop {
     background-color: #04AA6D;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 0.875em 1.25em;
+    margin: 0.5em 0;
     border: none;
     cursor: pointer;
     width: 100%;
@@ -486,13 +490,13 @@ bottomBubbles {  0% {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     color: white;
-    font-size: 16px;
-    padding: 12px 24px;
+    font-size: 1em;
+    padding: 0.75em 1.5em;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 0.3125em;
 } 
 
 h1 {
-  margin: 20px;  
+  margin: 1.25em;  
 }

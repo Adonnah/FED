@@ -35,19 +35,19 @@ const sortIconButton = document.querySelector('button[aria-label="Toggle Sort Di
 // Track the sort direction state
 let isAscending = true;
 
-// Add a click event listener to the sort button
-sortIconButton.addEventListener('click', function() {
-    // Toggle the aria-pressed attribute and the sort direction
-    isAscending = !isAscending;
-    this.setAttribute('aria-pressed', isAscending ? 'false' : 'true');
+// // Add a click event listener to the sort button
+// sortIconButton.addEventListener('click', function() {
+//     // Toggle the aria-pressed attribute and the sort direction
+//     isAscending = !isAscending;
+//     this.setAttribute('aria-pressed', isAscending ? 'false' : 'true');
 
-    // Optionally log the new sorting direction or apply logic
-    if (isAscending) {
-        console.log('Sort Ascending');
-    } else {
-        console.log('Sort Descending');
-    }
-});
+//     // Optionally log the new sorting direction or apply logic
+//     if (isAscending) {
+//         console.log('Sort Ascending');
+//     } else {
+//         console.log('Sort Descending');
+//     }
+// });
 
 // bron: chat gpt: https://chatgpt.com/c/2feceae3-6dd6-4cf3-8ba3-0d833a3b333d
 document.addEventListener('mousemove', function(e) {
@@ -63,26 +63,38 @@ document.addEventListener('mousemove', function(e) {
     // Append the particle to the body
     document.body.appendChild(particle);
 
-    // Remove the particle after its animation ends (after 0.8s)
+    // Remove the particle after its animation ends (after 0.9s)
     setTimeout(() => {
         particle.remove();
-    }, 800); // Matches the duration of the fadeOut animation (0.8s)
+    }, 900); // Matches the duration of the fadeOut animation (0.9s)
 });
 
-
-
-var animateButton = function(e) {
-    e.preventDefault;
-    //reset animation
-    e.target.classList.remove('animate');
-    
-    e.target.classList.add('animate');
-    setTimeout(function(){
-      e.target.classList.remove('animate');
-    },700);
+const defaults = {
+    spread: 360,
+    ticks: 50,
+    gravity: 0,
+    decay: 0.94,
+    startVelocity: 30,
+    shapes: ["star"],
+    colors: ["FFE400", "FFBD00", "E89400", "FFCA6C", "FDFFB8"],
   };
-  var classname = document.getElementsByClassName("bubbly-button");
-  for (var i = 0; i < classname.length; i++) {
-    classname[i].addEventListener('click', animateButton, false);
-    
+  
+  function shoot() {
+    confetti({
+      ...defaults,
+      particleCount: 40,
+      scalar: 1.2,
+      shapes: ["star"],
+    });
+  
+    confetti({
+      ...defaults,
+      particleCount: 10,
+      scalar: 0.75,
+      shapes: ["circle"],
+    });
   }
+
+  // Select the button by its class and add a click event listener
+  document.querySelector('.confetti-button').addEventListener('click', shoot);
+  
