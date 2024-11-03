@@ -9,11 +9,13 @@
     --h2-background-color: rgba(42, 42, 42, 0.65);
     --h2-border-color: rgba(255, 255, 255, 0.6);
     --confetti-background-color: #2A2A2A;
+    --border-back-color: #d3d3d3;
+    --stroke-color: #000000;
 
     --halloween-bg-color: #333; /* Dark background for Halloween */
     --halloween-text-color: #f5f0e1; /* Light text color */
     --halloween-accent-color: #ff8c00; /* Orange accent color */
-    --halloween-border-color: #ff4500; /* Orange-red for borders */
+    --halloween-border-color: #ffffff; /* Orange-red for borders */
     --halloween-link-color: #ffa500; /* Lighter orange for links */
     --halloween-white-color: #333;;
     --halloween-black-color: #ffa500;
@@ -35,6 +37,9 @@
     --h2-background-color: rgba(0, 0, 0, 0.5); /* Darker h2 background */
     --h2-border-color: var(--halloween-border-color);
     --a-visiting-color: var(--halloween-link-color); /* Change visited links */
+    --border-bottom-color: #ffffff; 
+    --border-back-color: #000000;
+    --stroke-color: #ffffff;
 }
 
 * {
@@ -177,8 +182,10 @@ input {
 
 }
 
+
 h1 {
     margin: var(--margin-standard);  
+    color: var(--black-color);
   }
 
 h2 {
@@ -189,11 +196,11 @@ h2 {
     right: 0;
     margin: 1em;
     transform: translateX(-0);
-    background-color: rgba(42, 42, 42, 0.65);
+    background-color: var(--h2-background-color);
     padding: var(--padding-standard) ;
     color: white;
     font-size: 1.25em;
-    border: 0.125em solid rgba(255, 255, 255, 0.6);
+    border: 0.125em solid var(--h2-border-color);
 }
 
 p,
@@ -205,7 +212,7 @@ h5 {
 
 a {
     text-decoration: none;
-
+    color: var(--a-visiting-color);
 }
 
 a:hover {
@@ -225,22 +232,21 @@ footer {
 
 /* footer section heb heeft Danny mij uitgelegt en laten zien hoe ik dit zou kunnen anpakken en toe kan passen aan mijn website     */
 footer section:nth-of-type(1) ul {
-    border-bottom: 0.0625em solid black;    
+    border-bottom: 0.0625em solid var(--border-bottom-color);   
 }
 
 footer section:nth-of-type(2) ul {
-    border-bottom: 0.0625em solid black;
+    border-bottom: 0.0625em solid var(--border-bottom-color);
     display: flex;
     margin: 1em;
 }
 
 footer section:nth-of-type(3) ul {
-    border-bottom: 0.0625em solid black;
-    
+    border-bottom: 0.0625em solid var(--border-bottom-color);   
 }
 
 footer section:nth-of-type(4) ul {
-    border-bottom: 0.0625em solid black;
+    border-bottom: 0.0625em solid var(--border-bottom-color);
 }
 
 footer h3 {
@@ -249,15 +255,25 @@ footer h3 {
     margin: 0;
 }
 
+footer a {
+    color: var(--a-visiting-color);
+}
 
 aside a:nth-of-type(1) img {
     width: 6.25em;
     height: 1.375em;
+    filter: none;
 }
+
+.halloween-mode aside a:nth-of-type(1) img {
+    filter: invert(1) brightness(2) grayscale(1); /* Turns icons white */
+}
+
 
 aside a:nth-of-type(1) {
     margin: 0 auto;
 }
+
 
 /* bron: chat gpt : https://chatgpt.com/c/2feceae3-6dd6-4cf3-8ba3-0d833a3b333d */
 /* Styling for each particle */
@@ -288,6 +304,7 @@ aside a:nth-of-type(1) {
     width: 100%;
 }
 
+
 .girl {
     width: 100%;
     margin: 0;
@@ -305,13 +322,6 @@ aside a:nth-of-type(1) {
 
 .block {
     background-color: #adff2f;
-}
-
-section#product-grid {
-    display: grid;
-    grid-template: repeat(5, auto) / 50% 50%;
-    gap: 1.25em;
-    padding: 2.5em;
 }
 
 .hidden {
@@ -378,7 +388,6 @@ button {
     padding: 0.625em;
 }
 
-
 #product-grid {
     display: grid;
 }
@@ -413,6 +422,13 @@ label {
     margin-bottom: 0.3125em;
 }
 
+section#product-grid {
+    display: grid;
+    grid-template: repeat(5, auto) / 50% 50%;
+    gap: 1.25em;
+    padding: 2.5em;
+}
+
 /* bron: chat gpt : https://chatgpt.com/c/2feceae3-6dd6-4cf3-8ba3-0d833a3b333d */
 /* Style the select dropdowns */
 select {
@@ -422,6 +438,7 @@ select {
     margin-bottom: var(--margin-bottom-standard);
     border-radius: 0.25em;
     background-color: var(--main-bg-color);
+    color: var(--black-color);
 }
 
 /* Style the sort icon button */
@@ -441,10 +458,16 @@ button[aria-pressed="true"] svg {
     stroke: #f5a623;
 }
 
+.toggle-halloween-mode {
+    margin: 1em;
+    padding: 0.50em;
+    color: var(--black-color);
+    background-color: var(--border-back-color);
+}
 
 .favorite-star svg {
     fill: none;
-    stroke: black;
+    stroke: var(--stroke-color);
     stroke-width: 0.625em;
     transition: all 250ms ease;
 }

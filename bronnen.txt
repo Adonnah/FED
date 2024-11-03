@@ -15,5 +15,6 @@ Bron: Chat GPT
 Bron: Zumiez website
 Bron: 3world https://www.w3schools.com/default.asp
 Bron: stackoverflow.com 
+Bron: confetti.js https://confetti.js.org/more.html
 
 free convert SVG: https://www.freeconvert.com/nl/jpg-to-svg/download

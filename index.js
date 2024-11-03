@@ -35,19 +35,6 @@ const sortIconButton = document.querySelector('button[aria-label="Toggle Sort Di
 // Track the sort direction state
 let isAscending = true;
 
-// // Add a click event listener to the sort button
-// sortIconButton.addEventListener('click', function() {
-//     // Toggle the aria-pressed attribute and the sort direction
-//     isAscending = !isAscending;
-//     this.setAttribute('aria-pressed', isAscending ? 'false' : 'true');
-
-//     // Optionally log the new sorting direction or apply logic
-//     if (isAscending) {
-//         console.log('Sort Ascending');
-//     } else {
-//         console.log('Sort Descending');
-//     }
-// });
 
 // bron: chat gpt: https://chatgpt.com/c/2feceae3-6dd6-4cf3-8ba3-0d833a3b333d
 document.addEventListener('mousemove', function(e) {
@@ -79,6 +66,7 @@ const defaults = {
     colors: ["FFE400", "FFBD00", "E89400", "FFCA6C", "FDFFB8"],
   };
   
+  //bron confetti.js: https://confetti.js.org/more.html
   function shoot() {
     confetti({
       ...defaults,
@@ -96,13 +84,10 @@ const defaults = {
   }
   
   document.querySelector('.confetti-button').addEventListener('click', shoot);
-      
-
-// Function to toggle Halloween mode
-function toggleHalloweenMode() {
+     
+  function toggleHalloweenMode() {
     document.body.classList.toggle('halloween-mode');
 }
 
-// Example of using the function with a button
-document.getElementById('toggle-halloween-mode').addEventListener('click', toggleHalloweenMode);
-
+// Example of using the function with a button that has a class
+document.querySelector('.toggle-halloween-mode').addEventListener('click', toggleHalloweenMode);
