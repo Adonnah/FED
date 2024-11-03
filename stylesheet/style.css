@@ -6,11 +6,9 @@
     --black-color: #000000;
     --a-visiting-color: #808080; 
     --blok-color: #adff2f; 
-    --shop-background-color: #04AA6D;
     --h2-background-color: rgba(42, 42, 42, 0.65);
     --h2-border-color: rgba(255, 255, 255, 0.6);
     --confetti-background-color: #2A2A2A;
-
 
     --halloween-bg-color: #333; /* Dark background for Halloween */
     --halloween-text-color: #f5f0e1; /* Light text color */
@@ -29,7 +27,6 @@
     --input-height: 2.5em;
 }
 
-  
 .halloween-mode {
     --main-bg-color: var(--halloween-bg-color);
     --white-color: var(--halloween-text-color);
@@ -48,6 +45,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background: var(--main-bg-color);
 }
 
 header {
@@ -377,7 +375,7 @@ button {
     border: none;
     cursor: pointer;
     outline: none;
-    padding: var(--sub-padding);
+    padding: 0.625em;
 }
 
 
@@ -442,7 +440,6 @@ button[aria-pressed="true"] svg {
     transform: rotate(180deg);
     stroke: #f5a623;
 }
-
 
 
 .favorite-star svg {

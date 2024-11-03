@@ -94,6 +94,9 @@ const defaults = {
       shapes: ["circle"],
     });
   }
+  
+  document.querySelector('.confetti-button').addEventListener('click', shoot);
+      
 
 // Function to toggle Halloween mode
 function toggleHalloweenMode() {
