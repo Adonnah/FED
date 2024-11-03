@@ -227,10 +227,10 @@ Negative points
   ### Dit ging goed/Heb ik geleerd: 
   Ik heb zeker veel dingen geleerd, in jaar 1 had ik helemaal niet met articles en sections gewerkt en nu moesten we hier zo veel mogelijk mee aan de slag. Ook heb ik een leuke animatie van een ster (favorite) gemaakt an de hand van javascript wat erg leuk was om te doen. ik heb ook sommige oude elementen die ik in jaar 1 heb gebruikt, opnieuw gebruikt (audio,  enz.). 
 
-  <img src="readme-images/Star2024-11-03 om 18.53.56" width="375px" alt="omschrijving">
+  <img src="readme-images/Star2024-11-03 om 18.53.56.png" width="375px" alt="omschrijving">
   
-  <img src="readme-images/Light 2024-11-03 om 22.22.52" width="375px" alt="omschrijving">
-  <img src="readme-images/Dark2024-11-03 om 22.22.42" width="375px" alt="omschrijving">
+  <img src="readme-images/Light 2024-11-03 om 22.22.52.png" width="375px" alt="omschrijving">
+  <img src="readme-images/Dark2024-11-03 om 22.22.42.png" width="375px" alt="omschrijving">
 
 
   ### Dit was lastig/Is niet gelukt:
