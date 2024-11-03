@@ -1,3 +1,45 @@
+:root {
+    --main-bg-color: #ffffff;
+    --particle-shadow-background-color: rgba(0, 0, 0, 1);
+    --border-bottom-color: #000000;
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --a-visiting-color: #808080; 
+    --blok-color: #adff2f; 
+    --shop-background-color: #04AA6D;
+    --h2-background-color: rgba(42, 42, 42, 0.65);
+    --h2-border-color: rgba(255, 255, 255, 0.6);
+    --confetti-background-color: #2A2A2A;
+
+
+    --halloween-bg-color: #333; /* Dark background for Halloween */
+    --halloween-text-color: #f5f0e1; /* Light text color */
+    --halloween-accent-color: #ff8c00; /* Orange accent color */
+    --halloween-border-color: #ff4500; /* Orange-red for borders */
+    --halloween-link-color: #ffa500; /* Lighter orange for links */
+    --halloween-white-color: #333;;
+    --halloween-black-color: #ffa500;
+
+    --padding-standard: 1.25em;
+    --sub-padding: 0.625em;
+    --margin-standard: 1.25em;
+    --margin-bottom-standard: 0.625em;
+    --font-size-standard: 1em;
+    --border-radius-small: 0.2em;
+    --input-height: 2.5em;
+}
+
+  
+.halloween-mode {
+    --main-bg-color: var(--halloween-bg-color);
+    --white-color: var(--halloween-text-color);
+    --black-color: #ffffff; /* Invert black for Halloween */
+    --shop-background-color: var(--halloween-accent-color);
+    --h2-background-color: rgba(0, 0, 0, 0.5); /* Darker h2 background */
+    --h2-border-color: var(--halloween-border-color);
+    --a-visiting-color: var(--halloween-link-color); /* Change visited links */
+}
+
 * {
     padding: 0;
     box-sizing: border-box;
@@ -8,27 +50,12 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* bron: chat gpt : https://chatgpt.com/c/2feceae3-6dd6-4cf3-8ba3-0d833a3b333d */
-/* Styling for each particle */
-.particle {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: rgba(0, 0, 0, 1); /* Light gray particle */
-    border-radius: 50%; /* Make the particle a circle */
-    pointer-events: none; /* Prevent particles from being interactive */
-    animation: fadeOut 1.2s forwards; /* Fade out animation */
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-        transform: scale(1);
-    }
-    100% {
-        opacity: 0;
-        transform: scale(0.5);
-    }
+header {
+    top: 0;
+    background-color: var(--main-bg-color);
+    padding: 0.9375em;
+    z-index: 1000;
+    border-bottom: 1px solid var(--border-bottom-color);
 }
 
 header,
@@ -36,25 +63,8 @@ nav,
 section,
 article,
 footer {
-    padding: 1.25em;
+    padding: var(--padding-standard);
     margin: 0 auto;
-}
-
-header {
-    top: 0;
-    background-color: #fff;
-    padding: 0.9375em;
-    z-index: 1000;
-    border-bottom: 1px solid black;
-}
-
-.hi {
-    position: sticky;
-    width: 100%;
-}
-
-a:visited {
-    color: grey;
 }
 
 header img {
@@ -62,18 +72,8 @@ header img {
     max-height: 2.5em;
 }
 
-aside a:nth-of-type(1) img {
-    width: 6.25em;
-    height: 1.375em;
-}
-
-aside a:nth-of-type(1) {
-    margin: 0 auto;
-}
-
-.girl {
-    width: 100%;
-    margin: 0;
+header a {
+    display: flex;
 }
 
 ul {
@@ -82,112 +82,15 @@ ul {
     font-size: 1.20em;  
 }
 
-.connect {
-    background-color: white;
-
-}
-
-.zumielogo {
-    position: sticky;
-    margin-right: auto;
-}
-
 nav {
     display: flex;
     list-style: none;
     justify-content: space-between;
     text-decoration: none;
-    color: white;
+    color: var(--white-color);
     padding: 0;
     margin: 0;
     list-style-type: none;
-}
-
-.block {
-    background-color: #adff2f;
-}
-
-li {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    padding: 0.5em;
-    border-radius: 0.2em;
-    font-size: 1em;
-    color: #000;
-
-}
-
-input {
-    height: 2.5em;
-    width: 100%;
-    border: 0.20em solid black;
-    margin: 1em auto;
-    /* display inline-block heb ik van: stackoverflow.com */
-    display: inline-block;
-
-}
-
-article {
-    text-align: center;
-    padding: 1.25em;
-    position: relative;
-}
-
-article img {
-    max-width: 100%;
-    margin-bottom: 0.3125em;
-
-}
-
-h2 {
-    position: absolute;
-    font-family: Arial, Helvetica, sans-serif;
-    bottom: 0.4em;
-    left: 0;
-    right: 0;
-    margin: 1em;
-    transform: translateX(-0);
-    background-color: rgba(42, 42, 42, 0.65);
-    padding: 1.25em ;
-    color: white;
-    font-size: 1.25em;
-    border: 2px solid rgba(255, 255, 255, 0.6);
-}
-
-
-section#product-grid {
-    display: grid;
-    grid-template: repeat(5, auto) / 50% 50%;
-    gap: 1.25em;
-    padding: 40px;
-}
-
-footer {
-    color: #fff;
-    text-align: center;
-    padding: 1.25em 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.hidden {
-    display: none;
-}
-
-p,
-h3,
-h4,
-h5 {
-    color: #000;
-}
-
-a {
-    text-decoration: none;
-
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 nav ul li ul {
@@ -195,9 +98,9 @@ nav ul li ul {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: white;
-    padding: 0.625em 0;
-    box-shadow: 0 0.3125em 0.625em rgba(0, 0, 0, 0.1);
+    background-color: var(--main-bg-color);
+    padding: var(--sub-padding) 0;
+    box-shadow: 0 0.3125em 0.625em var(--particle-shadow-background-color);
 }
 
 nav ul li:hover ul {
@@ -206,7 +109,7 @@ nav ul li:hover ul {
 
 nav ul li ul li {
     display: block;
-    padding: 0.625em 1.25em;
+    padding: var(--sub-padding) var(--padding-standard);
 }
 
 
@@ -242,6 +145,181 @@ nav[aria-expanded="true"] ul {
     display: block;
 }
 
+
+li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0.5em;
+    border-radius: 0.2em;
+    font-size: 1em;
+    color: var(--black-color);
+
+}
+
+article {
+    text-align: center;
+    padding: var(--padding-standard);
+    position: relative;
+}
+
+article img {
+    max-width: 100%;
+    margin-bottom: 0.3125em;
+
+}
+
+input {
+    height: 2.5em;
+    width: 100%;
+    border: 0.20em solid black;
+    margin: 1em auto;
+    /* display inline-block heb ik van: stackoverflow.com */
+    display: inline-block;
+
+}
+
+h1 {
+    margin: var(--margin-standard);  
+  }
+
+h2 {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    bottom: 0.4em;
+    left: 0;
+    right: 0;
+    margin: 1em;
+    transform: translateX(-0);
+    background-color: rgba(42, 42, 42, 0.65);
+    padding: var(--padding-standard) ;
+    color: white;
+    font-size: 1.25em;
+    border: 0.125em solid rgba(255, 255, 255, 0.6);
+}
+
+p,
+h3,
+h4,
+h5 {
+    color: var(--black-color);
+}
+
+a {
+    text-decoration: none;
+
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: grey;
+}
+
+footer {
+    color: var(--white-color);
+    text-align: center;
+    padding: var(--padding-standard) 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* footer section heb heeft Danny mij uitgelegt en laten zien hoe ik dit zou kunnen anpakken en toe kan passen aan mijn website     */
+footer section:nth-of-type(1) ul {
+    border-bottom: 0.0625em solid black;    
+}
+
+footer section:nth-of-type(2) ul {
+    border-bottom: 0.0625em solid black;
+    display: flex;
+    margin: 1em;
+}
+
+footer section:nth-of-type(3) ul {
+    border-bottom: 0.0625em solid black;
+    
+}
+
+footer section:nth-of-type(4) ul {
+    border-bottom: 0.0625em solid black;
+}
+
+footer h3 {
+    display: flex;
+    justify-content: start;
+    margin: 0;
+}
+
+
+aside a:nth-of-type(1) img {
+    width: 6.25em;
+    height: 1.375em;
+}
+
+aside a:nth-of-type(1) {
+    margin: 0 auto;
+}
+
+/* bron: chat gpt : https://chatgpt.com/c/2feceae3-6dd6-4cf3-8ba3-0d833a3b333d */
+/* Styling for each particle */
+.particle {
+    position: absolute;
+    width: 1.25em;
+    height: 1.25em;
+    background-color: var(--particle-shadow-background-color); /* Light gray particle */
+    border-radius: 50%; /* Make the particle a circle */
+    pointer-events: none; /* Prevent particles from being interactive */
+    animation: fadeOut 1.2s forwards; /* Fade out animation */
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+
+.hi {
+    position: sticky;
+    width: 100%;
+}
+
+.girl {
+    width: 100%;
+    margin: 0;
+}
+
+.connect {
+    background-color: var(--main-bg-color);
+
+}
+
+.zumielogo {
+    position: sticky;
+    margin-right: auto;
+}
+
+.block {
+    background-color: #adff2f;
+}
+
+section#product-grid {
+    display: grid;
+    grid-template: repeat(5, auto) / 50% 50%;
+    gap: 1.25em;
+    padding: 2.5em;
+}
+
+.hidden {
+    display: none;
+}
+
 .info-sections {
     display: flex;
     justify-content: space-between;
@@ -269,7 +347,7 @@ nav[aria-expanded="true"] ul {
 }
 
 .info-sections ul li {
-    margin-bottom: 0.625em;
+    margin-bottom: var(--margin-bottom-standard);
 }
 
 .info-sections ul li a {
@@ -280,29 +358,7 @@ nav[aria-expanded="true"] ul {
 
 .info-sections ul li a:hover {
     text-decoration: underline;
-    color: #000;
-}
-
-
-/* footer section heb heeft Danny mij uitgelegt en laten zien hoe ik dit zou kunnen anpakken en toe kan passen aan mijn website     */
-footer section:nth-of-type(1) ul {
-    border-bottom: 0.0625em solid black;
-    
-}
-
-footer section:nth-of-type(2) ul {
-    border-bottom: 0.0625em solid black;
-    display: flex;
-    margin: 1em;
-}
-
-footer section:nth-of-type(3) ul {
-    border-bottom: 0.0625em solid black;
-    
-}
-
-footer section:nth-of-type(4) ul {
-    border-bottom: 0.0625em solid black;
+    color: var(--black-color);
 }
 
 .plus a {
@@ -316,22 +372,12 @@ footer section:nth-of-type(4) ul {
     height: 1.5em;
 }
 
-footer h3 {
-    display: flex;
-    justify-content: start;
-    margin: 0;
-}
-
-header a {
-    display: flex;
-}
-
 button {
     background: none;
     border: none;
     cursor: pointer;
     outline: none;
-    padding: 0.625em;
+    padding: var(--sub-padding);
 }
 
 
@@ -346,16 +392,16 @@ aside {
 
 form {
     border: 0.0625em solid #ddd;
-    padding: 0.625em;
+    padding: var(--sub-padding);
     max-width: 25em;
-    margin: 1.25em auto;
+    margin: var(--margin-standard) auto;
     background-color: #f9f9f9;
 }
 
 fieldset {
     border: 0.0625em solid #ccc;
-    padding: 0.625em;
-    margin-bottom: 0.625em;
+    padding: var(--sub-padding);
+    margin-bottom: var(--margin-bottom-standard);
 }
 
 legend {
@@ -375,9 +421,9 @@ select {
     width: 100%;
     padding: 0.3125em;
     border: 0.0625em solid #ccc;
-    margin-bottom: 0.625em;
+    margin-bottom: var(--margin-bottom-standard);
     border-radius: 0.25em;
-    background-color: #fff;
+    background-color: var(--main-bg-color);
 }
 
 /* Style the sort icon button */
@@ -414,8 +460,8 @@ button[aria-pressed="true"] svg {
 /* Deze stuk koden heb ik van de website w3schools.com : https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_signup_form */
 .confetti-button {
     background-color: #2A2A2A; /*bron zumiez website*/
-    color: white;
-    padding: 0.875em 1.25em;
+    color: var(--white-color);
+    padding: 0.875em var(--padding-standard);
     margin: 0.5em 0;
     border: none;
     width: 100%;
@@ -463,11 +509,10 @@ bottomBubbles {  0% {
 }
 }
 
-
 .shop {
     background-color: #04AA6D;
-    color: white;
-    padding: 0.875em 1.25em;
+    color: var(--white-color);
+    padding: 0.875em var(--padding-standard);
     margin: 0.5em 0;
     border: none;
     cursor: pointer;
@@ -489,14 +534,10 @@ bottomBubbles {  0% {
     left: 80%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    color: white;
+    color: var(--white-color);
     font-size: 1em;
     padding: 0.75em 1.5em;
     border: none;
     cursor: pointer;
     border-radius: 0.3125em;
 } 
-
-h1 {
-  margin: 1.25em;  
-}

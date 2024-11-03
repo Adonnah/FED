@@ -95,6 +95,11 @@ const defaults = {
     });
   }
 
-  // Select the button by its class and add a click event listener
-  document.querySelector('.confetti-button').addEventListener('click', shoot);
-  
+// Function to toggle Halloween mode
+function toggleHalloweenMode() {
+    document.body.classList.toggle('halloween-mode');
+}
+
+// Example of using the function with a button
+document.getElementById('toggle-halloween-mode').addEventListener('click', toggleHalloweenMode);
+
