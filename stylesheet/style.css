@@ -239,6 +239,11 @@ footer section:nth-of-type(2) ul {
     border-bottom: 0.0625em solid var(--border-bottom-color);
     display: flex;
     margin: 1em;
+    filter: none;
+}
+
+.halloween-mode footer section:nth-of-type(2) ul{
+    filter: invert(1) brightness(2) grayscale(1); /* Turns icons white */
 }
 
 footer section:nth-of-type(3) ul {
