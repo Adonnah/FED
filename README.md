@@ -167,15 +167,13 @@ Negative points
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
-  Positieve bevindingen
-  1.
 
-  Negatieve bevindingen
+  Bevindingen
   1. Het heeft geen darkmoduse
   2. Zumiez gebruikt niks wat met video of audio te maken heeft.
   3. Links staan niet duidelijk aangegeven
   4. Ze hebben alleen het eerste gedeelte van animatie <strong>'ensure animations are subtle and do not flash too much'</strong>
-  5. 
+     
   
 </details>
 
